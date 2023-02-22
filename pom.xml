@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+
+    <groupId>io.github.changebooks</groupId>
+    <artifactId>mybatis-provider-samples</artifactId>
+    <version>1.0.1</version>
+
+    <modules>
+        <module>mybatis-provider-sample</module>
+        <module>mybatis-provider-gen-sample</module>
+        <module>mybatis-provider-spring-boot-starter-sample</module>
+    </modules>
+
+    <properties>
+        <mybatis-provider.version>1.0.1</mybatis-provider.version>
+        <mybatis-provider-gen.version>1.0.1</mybatis-provider-gen.version>
+        <mybatis-provider-spring-boot-starter.version>1.0.1</mybatis-provider-spring-boot-starter.version>
+        <mysql-connector.version>8.0.31</mysql-connector.version>
+        <spring-boot-starter-web.version>2.7.8</spring-boot-starter-web.version>
+        <slf4j-api.version>1.7.36</slf4j-api.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.github.changebooks</groupId>
+                <artifactId>mybatis-provider</artifactId>
+                <version>${mybatis-provider.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.changebooks</groupId>
+                <artifactId>mybatis-provider-gen</artifactId>
+                <version>${mybatis-provider-gen.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.changebooks</groupId>
+                <artifactId>mybatis-provider-spring-boot-starter</artifactId>
+                <version>${mybatis-provider-spring-boot-starter.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-connector.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring-boot-starter-web.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j-api.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
